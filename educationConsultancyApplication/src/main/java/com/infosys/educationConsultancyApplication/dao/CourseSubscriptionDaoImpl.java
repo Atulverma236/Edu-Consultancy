@@ -1,22 +1,22 @@
 package com.infosys.educationConsultancyApplication.dao;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-
+import org.springframework.stereotype.Service;
 import com.infosys.educationConsultancyApplication.bean.CourseSubscription;
+@Service
 @Repository
 public class CourseSubscriptionDaoImpl implements CourseSubscriptionDao {
 	@Autowired
 	private CourseSubscriptionRepository repository;
 	
-	@Autowired
+	@Override
 	 public void save(CourseSubscription subscription) {
 		 repository.save(subscription);
 	}
 	
-	@Autowired
+	@Override
 	public CourseSubscription getSubscriptionById(String id) {
 		return repository.findById(id).get();
 	}
