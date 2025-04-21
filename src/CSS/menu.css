@@ -1,0 +1,27 @@
+.offcanvas {
+    background-color: #09004e !important;
+    color: rgb(255, 255, 255) !important;
+    width: 250px !important;
+  }
+  
+  .nav-link {
+    color: rgb(249, 245, 245) !important;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  .nav-link:hover {
+    background-color: #281fa3;
+    border-radius: 5px;
+  }
+  
+  .logout-link {
+    color: #ff4d4d !important;
+    font-weight: bold;
+  }
+  .dropdown-item:hover{
+    background-color: rgb(217, 239, 247);
+  }
+  .dropdown-toggle:hover{
+    background-color:#281fa3;
+  }
